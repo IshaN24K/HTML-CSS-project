@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    top: 0;
+    background-color: white; 
+    position: sticky;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    min-height: 90px;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+}
+.logo{
+    font-size: 25px;
+}
+.logoc{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#homepagesep{
+    color: rgb(40,171,227);
+}
+.nav_button{
+    color: black;
+}
+.nav_button:hover{
+    color: rgb(40,171,227);
+}
+
+/* ***********************button************************** */
+
+input{
+    display: none;
+}
+.toggleClass{
+    display: none;
+}
+.toggleClass:hover{
+    color: rgb(40, 171, 227);
+}
+
+@media screen and (max-width:425px) {
+    .navlist{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .toggleClass{
+        display: block;
+    }
+    #toggle:checked ~ .navlistmain .navlist{
+        display: flex;
+    }
+}
+
+/* ***********************pricing header************************** */
+
+.team_header{
+    z-index: 9;
+    width: 100%;
+}
+.header_img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(./resources/about-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: brightness(0.7); */
+}
+.header_tag{
+    /* width: 20%; */
+    text-align: center;
+    z-index: 8;
+    color: white;
+}
+.header_tag a{
+    color: white;
+    text-decoration: none;
+}
+.header_tag_head h2{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.header_tag_link {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* ***********************we are bingo agency************************** */
+
+.hp_waba{
+    position: relative;
+    padding: 80px 0;
+    background-color: rgb(247,247,247);
+}
+.hp_waba_1{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hp_waba_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.hp_waba_textbody{
+    font-size: 16px;
+    color: rgb(132,132,132);
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+.border_1{
+    height: 2px;
+    width: 60px;
+    background: rgb(222,226,230);
+    margin: 20px auto;
+}
+.container_waba{
+    /* width: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 100px;
+    flex-direction: row;
+    /* margin-top: 150px; */
+    font-size: 16px;
+    color: rgb(149, 149, 149);
+    padding: 20px;
+}
+.waba_img {
+    background: url(./resources/about-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    scale: 1.5;
+    width: 240px;
+    height: 200px;
+    flex-shrink: 0;
+    max-width: 50%;
+}
+.waba_alt {
+    flex-grow: 1;
+    max-width: 40%;
+}
+.custom_bullets{
+    text-align: left;
+}
+ul.custom_bullets {
+    list-style-type: none;
+    padding-left: 20px;
+}
+ul.custom_bullets li::before{
+    font-family: 'Font Awesome 6 Free';
+    content: '\f058';
+    font-weight: 900;
+    color: rgb(149,149,149);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
+}
+.hpimagetextbutton{
+    width: fit-content;
+    height: auto;
+    font-size: 18px;
+    background-color: rgb(40, 171, 227);
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+.hpimagetextbutton_link{
+    color: white;
+}
+
+/* ***********************our greatest plans************************** */
+
+.p_ogp_1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p_ogp_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.p_ogp_textbody{
+    width: 40%;
+    font-size: 16px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+.border_p_ogp_1{
+    height: 2px;
+    width: 60px;
+    background: white;
+    margin: 20px auto;
+}
+.ogp_1 img{
+    display: block;
+    /* position: relative; */
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    overflow: hidden;
+    height: 140vh;
+}
+.ogp_1{
+    position: relative;
+}
+.ogp_price_card_group{
+    bottom: 0px;
+    /* left: auto; */
+    /* right: auto; */
+    width: 90%;
+    height: 100vh;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ogp_card{
+    width: 30%;
+    padding: 60px;
+    height: 80vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+}
+.ogp_card_p{
+    font-size: large;
+}
+.ogp_card h1{
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(40, 171, 227);
+}
+.ogp_card_p2{
+    font-size: medium;
+    color: gray;
+}
+.ogp_ul{
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    line-height: 40px;
+    color: gray;
+    letter-spacing: 2px;
+}
+.card_signup{
+    width: 50%;
+    background-color: rgb(40, 171, 227);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+}
+
+/* ***********************footer************************** */
+
+footer{
+    width: 100%;
+    /* height: 400px; */
+    background-color: rgb(34,34,34);
+}
+.footer_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 100px 0 80px;
+    gap: 0;
+    justify-content: space-around;
+}
+#ele1{
+    max-width: 30%;
+}
+#ele1 p{
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.footer_element h3{
+    margin-bottom: 20px;
+}
+.footer_element li{
+    list-style: none;
+    color: white;
+    text-align: left;
+    font-weight: 100;
+}
+.footer_element a:hover{
+    color: rgb(40, 171, 227);
+}
+.footer_element ul{
+    padding: 0;
+}
+.footer_element a{
+    color: white;
+}

@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    top: 0;
+    background-color: white; 
+    position: sticky;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    min-height: 90px;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+}
+.logo{
+    font-size: 25px;
+}
+.logoc{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#homepagesep{
+    color: rgb(40,171,227);
+}
+.nav_button{
+    color: black;
+}
+.nav_button:hover{
+    color: rgb(40,171,227);
+}
+
+/* ***********************button************************** */
+
+input{
+    display: none;
+}
+.toggleClass{
+    display: none;
+}
+.toggleClass:hover{
+    color: rgb(40, 171, 227);
+}
+
+@media screen and (max-width:425px) {
+    .navlist{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .toggleClass{
+        display: block;
+    }
+    #toggle:checked ~ .navlistmain .navlist{
+        display: flex;
+    }
+}
+
+/* ***********************team header************************** */
+
+.team_header{
+    z-index: 9;
+    width: 100%;
+}
+.header_img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(./resources/about-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: brightness(0.7); */
+}
+.header_tag{
+    /* width: 20%; */
+    text-align: center;
+    z-index: 8;
+    color: white;
+}
+.header_tag a{
+    color: white;
+    text-decoration: none;
+}
+.header_tag_head h2{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.header_tag_link {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* ***********************about us************************** */
+
+.ow_1{
+    margin-bottom: 50px;
+}
+.ow_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.ow_textbody{
+    width: 40%;
+    font-size: 16px;
+    color: rgb(132,132,132);
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border_1{
+    height: 2px;
+    width: 60px;
+    background: rgb(222,226,230);
+    margin: 20px auto;
+}
+
+/* ***********************we create design************************** */
+
+.aboutus_wcd {
+    padding: 40px 0 100px 0;
+}
+.aboutus_wcd_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.aboutus_wcd_img {
+    width: 45%;
+}
+.aboutus_wcd_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.aboutus_wcd_cont {
+    width: 45%;
+    text-align: left;
+    padding-left: 30px;
+}
+.wcd_cont_head h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.wcd_cont_para p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #848484;
+}
+.wcd_cont_list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.wcd_cont_list li {
+    padding: 4px 0px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+.learn_more_btn {
+    background-color: rgb(40,171,227);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.learn_more_btn a{
+    color: white;
+}
+
+/* ***********************our team************************** */
+
+.ot_1{
+    background-color: rgb(246,246,246);
+}
+.ot_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.ot_textbody{
+    width: 40%;
+    font-size: 16px;
+    color: rgb(132,132,132);
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border_1{
+    height: 2px;
+    width: 60px;
+    background: rgb(222,226,230);
+    margin: 20px auto;
+}
+.ot {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+}
+.ot_team_gallery {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+.aboutus_ot_cont {
+    /* width: 80%; */
+    text-align: center;
+}
+.ot_member_1 {
+    max-width: 33.33%;
+    background-color: white;
+}
+.ot_cont_head h2 {
+    font-size: 1.5em;
+    margin: 20px 0px;
+    color: black;
+}
+.ot_role p {
+    color: rgb(85,85,85);
+    padding-bottom: 10px;
+}
+.ot_cont_para p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(119,119,119);
+}
+.aboutus_ot_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* ***********************footer************************** */
+
+footer{
+    width: 100%;
+    /* height: 400px; */
+    background-color: rgb(34,34,34);
+}
+.footer_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 100px 0 80px;
+    gap: 0;
+    justify-content: space-around;
+}
+#ele1{
+    max-width: 30%;
+}
+#ele1 p{
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.footer_element h3{
+    margin-bottom: 20px;
+}
+.footer_element li{
+    list-style: none;
+    color: white;
+    text-align: left;
+    font-weight: 100;
+}
+.footer_element a:hover{
+    color: rgb(40, 171, 227);
+}
+.footer_element ul{
+    padding: 0;
+}
+.footer_element a{
+    color: white;
+}

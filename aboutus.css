@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    top: 0;
+    background-color: white; 
+    position: sticky;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    min-height: 90px;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+}
+.logo{
+    font-size: 25px;
+}
+.logoc{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#homepagesep{
+    color: rgb(40,171,227);
+}
+.nav_button{
+    color: black;
+}
+.nav_button:hover{
+    color: rgb(40,171,227);
+}
+
+/* ***********************button************************** */
+
+input{
+    display: none;
+}
+.toggleClass{
+    display: none;
+}
+.toggleClass:hover{
+    color: rgb(40, 171, 227);
+}
+
+@media screen and (max-width:425px) {
+    .navlist{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .toggleClass{
+        display: block;
+    }
+    #toggle:checked ~ .navlistmain .navlist{
+        display: flex;
+    }
+}
+
+/* ***********************about header************************** */
+
+.aboutus_header{
+    z-index: 9;
+    width: 100%;
+}
+.header_img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(./resources/about-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: brightness(0.7); */
+}
+.header_tag{
+    /* width: 20%; */
+    text-align: center;
+    z-index: 8;
+    color: white;
+}
+.header_tag a{
+    color: white;
+    text-decoration: none;
+}
+.header_tag_head h2{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.header_tag_link {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* ***********************we create design************************** */
+
+.aboutus_wcd {
+    padding: 40px 0;
+}
+.aboutus_wcd_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.aboutus_wcd_cont {
+    width: 45%;
+    text-align: left;
+}
+.wcd_cont_head h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+.wcd_cont_para p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(132,132,132);
+}
+.aboutus_wcd_img {
+    width: 45%;
+}
+.aboutus_wcd_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ***********************our mission************************** */
+
+.aboutus_om {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+.aboutus_om_main_cont{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.aboutus_om_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.aboutus_om_cont {
+    width: 80%;
+    text-align: left;
+}
+.om_cont_head h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+.om_cont_para p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(132,132,132);
+}
+.aboutus_om_img {
+    width: 80%;
+}
+.aboutus_om_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ***********************our promo video************************** */
+
+.opm_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.opm_textbody{
+    width: 40%;
+    font-size: 16px;
+    color: rgb(132,132,132);
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border_1{
+    height: 2px;
+    width: 60px;
+    background: rgb(222,226,230);
+    margin: 20px auto;
+}
+.opm_video video{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+/* ***********************lorem para************************** */
+
+.au_lp_header{
+    z-index: 9;
+    width: 100%;
+}
+.au_lp_img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(./resources/about-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: brightness(0.7); */
+}
+.au_lp_header_tag{
+    /* width: 20%; */
+    text-align: center;
+    z-index: 8;
+    color: white;
+}
+.au_lp_header_tag_head h2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 31px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* ***********************sneak peak gallery************************** */
+
+.spg_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.spg_textbody{
+    width: 40%;
+    font-size: 16px;
+    color: rgb(132,132,132);
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border_1{
+    height: 2px;
+    width: 60px;
+    background: rgb(222,226,230);
+    margin: 20px auto;
+}
+.spg_gallery{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.spg_image img{
+    width: 282px;
+}
+
+/* ***********************our team************************** */
+
+.ot_1{
+    background-color: rgb(246,246,246);
+}
+.ot_textheader{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.ot_textbody{
+    width: 40%;
+    font-size: 16px;
+    color: rgb(132,132,132);
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border_1{
+    height: 2px;
+    width: 60px;
+    background: rgb(222,226,230);
+    margin: 20px auto;
+}
+.ot {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+}
+.ot_team_gallery {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+.aboutus_ot_cont {
+    /* width: 80%; */
+    text-align: center;
+}
+.ot_member_1 {
+    max-width: 33.33%;
+    background-color: white;
+}
+.ot_cont_head h2 {
+    font-size: 1.5em;
+    margin: 20px 0px;
+    color: black;
+}
+.ot_role p {
+    color: rgb(85,85,85);
+    padding-bottom: 10px;
+}
+.ot_cont_para p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(119,119,119);
+}
+.aboutus_ot_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* ***********************award winning agency************************** */
+
+.hp_awa{
+    position: relative;
+    padding: 80px 0;
+    background-color: white;
+    height: 300px;
+}
+.hp_awa_1{
+    width: 100%;
+    margin: 0 auto;
+}
+.hp_awa_text{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+.hp_awa_textheader {
+    width: 40%;
+    color: black;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hp_awa_textbody {
+    width: 40%;
+    font-size: 16px;
+    color: rgb(149, 149, 149);
+    margin-bottom: 30px;
+}
+.dynamic_grid{
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.dynamic_grid_child h4{
+    font-size: 35px;
+}
+.dynamic_grid_child p{
+    font-size: 20px;
+    color: rgb(102,102,102);
+}
+.vertical_col{
+    width: 2px;
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(229,229,229);
+}
+
+/* ***********************lets create something together************************** */
+
+.hp_lcst{
+    position: relative;
+    /* padding: 80px 0; */
+    /* background-color: rgb(247,247,247); */
+    background-image: url(./resources/cc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(90%); */
+    height: 400px;
+}
+.hp_lcst_1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    max-width: 1440px;
+    text-align: center;
+}
+.hp_lcst_textheader {
+    color: white;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hp_lcst_textbody {
+    /* width: 40%; */
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+}
+.hpimagetextbutton {
+    width: fit-content;
+    height: auto;
+    font-size: 18px;
+    background-color: rgb(40, 171, 227);
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 20px auto 0;
+}
+.hpimagetextbutton_link {
+    color: white;
+    text-decoration: none;
+}
+
+/* ***********************footer************************** */
+
+footer{
+    width: 100%;
+    /* height: 400px; */
+    background-color: rgb(34,34,34);
+}
+.footer_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 100px 0 80px;
+    gap: 0;
+    justify-content: space-around;
+}
+#ele1{
+    max-width: 30%;
+}
+#ele1 p{
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.footer_element h3{
+    margin-bottom: 20px;
+}
+.footer_element li{
+    list-style: none;
+    color: white;
+    text-align: left;
+    font-weight: 100;
+}
+.footer_element a:hover{
+    color: rgb(40, 171, 227);
+}
+.footer_element ul{
+    padding: 0;
+}
+.footer_element a{
+    color: white;
+}
